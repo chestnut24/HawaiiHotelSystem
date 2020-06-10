@@ -1,0 +1,32 @@
+.header{
+  display: flex;
+  justify-content: space-between;
+  .menu{
+    li{
+      width: 200px;
+      text-align: center;
+    }
+    flex-grow: 1;
+  }
+  .user-info{
+    width: 200px;
+    background-color: rgb(228, 228, 228);
+  }
+}
+.login-button{
+  cursor: pointer;
+}
+.user-info{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.is-login{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+}
+.setting{
+  margin-left: 10px;
+}

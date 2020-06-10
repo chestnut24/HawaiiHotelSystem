@@ -1,0 +1,38 @@
+<div  class="container" >
+  <div class="list" style="background-color:#fff">
+    <div class="add-button"></div>
+    <nz-table #basicTable [nzData]="tableData" [nzShowPagination]="true" style="margin-top:10px;margin-bottom: 20px;">
+        <thead>
+            <tr>
+                <th>房间号</th>
+                <th>顾客名称</th>
+                <th>入住时间</th>
+                <th>离开时间</th>
+                <th>订单状态</th>
+                <th>操作</th>
+            </tr>
+        </thead>
+        <tbody>
+            <ng-container *ngFor="let data of basicTable.data;let i = index">
+                <tr>
+                    <td [innerHTML]="data?.roomNumber"></td>
+                    <td>{{data?.userName}}</td>
+                    <td>{{data?.start_time | date:'yyyy-MM-dd'}}</td>
+                    <td>{{data?.end_time  | date:'yyyy-MM-dd'}} </td>
+                    <td>
+                        <ng-container [ngSwitch]="data?.status">
+                            <span *ngSwitchCase="1" style="color: #52C41A">●</span>
+                            <span *ngSwitchCase="2"  style="color: #F5222D ">●</span>
+                            <span *ngSwitchCase="0" style="color:#BFBFBF">●</span>
+                        </ng-container>
+                      {{data?.status | subscribeStatus}}
+                    </td>
+                    <!-- <td>{{data?.remark}}</td> -->
+                    <td><a (click)="confirm(data.id)">确认</a>&nbsp;&nbsp;<a (click)="reject(data.id)">拒绝</a></td>
+                </tr>
+            </ng-container>
+        </tbody>
+    </nz-table>
+
+  </div>
+</div>

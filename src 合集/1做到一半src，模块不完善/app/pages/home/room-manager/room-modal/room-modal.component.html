@@ -1,0 +1,75 @@
+<div [formGroup]="form">
+  <nz-form-item>
+      <nz-form-label [nzSm]="6" [nzXs]="24" nzRequired nzFor="room_number">房间号</nz-form-label>
+      <nz-form-control [nzSm]="15">
+          <input nz-input formControlName="room_number" id="room_number" placeholder="输入房间号" type="number">
+          <nz-form-explain *ngIf="form.get('room_number').dirty && form.get('room_number').errors">房间号不能为空</nz-form-explain>
+      </nz-form-control>
+  </nz-form-item>
+
+  <nz-form-item>
+      <nz-form-label [nzSm]="6" [nzXs]="24" nzRequired nzFor="area">面积大小(㎡)</nz-form-label>
+      <nz-form-control [nzSm]="15">
+          <input nz-input formControlName="area" id="area" placeholder="输入房间面积" type="number">
+          <nz-form-explain *ngIf="form.get('area').dirty && form.get('area').errors">面积大小不能为空</nz-form-explain>
+      </nz-form-control>
+  </nz-form-item>
+
+
+  <nz-form-item>
+      <nz-form-label [nzSm]="6" [nzXs]="24" nzRequired nzFor="money">价格</nz-form-label>
+      <nz-form-control [nzSm]="15">
+          <input nz-input formControlName="money" id="money" placeholder="输入房间价格">
+          <nz-form-explain *ngIf="form.get('money').dirty && form.get('money').errors">价格不能为空</nz-form-explain>
+      </nz-form-control>
+  </nz-form-item>
+
+  <nz-form-item>
+    <nz-form-label [nzSm]="6" [nzXs]="24" nzRequired >房间类型</nz-form-label>
+    <nz-form-control [nzSm]="15">
+      <nz-select
+      style="width: 250px"
+      nzShowSearch
+      nzPlaceHolder="房间类型"
+      formControlName="catelog_id"
+    >
+    <ng-container *ngFor="let item of selectOptions">
+      <nz-option [nzLabel]="item?.name" [nzValue]="item?.id + ''"></nz-option>
+    </ng-container>
+    </nz-select>
+        <nz-form-explain *ngIf="form.get('catelog_id').dirty && form.get('catelog_id').errors">房间类型不能为空</nz-form-explain>
+    </nz-form-control>
+</nz-form-item>
+  <!-- <nz-form-item>
+    <nz-form-label [nzSm]="6" [nzXs]="24" nzRequired nzFor="money">价格</nz-form-label>
+    <nz-form-control [nzSm]="15">
+        <input nz-input formControlName="money" id="money" placeholder="输入房间价格">
+        <nz-form-explain *ngIf="form.get('money').dirty && form.get('money').errors">J价格不能为空</nz-form-explain>
+    </nz-form-control>
+  </nz-form-item> -->
+
+  <nz-form-item>
+    <nz-form-label [nzSm]="6" [nzXs]="24" nzRequired>上传房间照片</nz-form-label>
+    <nz-form-control [nzSm]="15">
+        <nz-upload [nzFileList]="fileList" (nzFileListChange)="fileListChange($event)" [nzBeforeUpload]="beforeUpload" [nzAccept]="'.jpg,.png'">
+            <button nz-button>
+                <i nz-icon type="upload"></i><span>选择文件</span>
+            </button>
+        </nz-upload>
+        <nz-form-explain *ngIf="form.get('image_url').dirty && form.get('image_url').errors">
+            <ng-container *ngIf="form.get('image_url').hasError('required')">
+                请选择房间照片
+            </ng-container>
+        </nz-form-explain>
+    </nz-form-control>
+</nz-form-item>
+
+
+  <nz-form-item>
+      <nz-form-label [nzSm]="6" [nzXs]="24"  nzFor="role">备注</nz-form-label>
+      <nz-form-control [nzSm]="15">
+        <input nz-input formControlName="remark" id="remark" placeholder="输入房间价格">
+        <nz-form-explain *ngIf="form.get('remark').dirty && form.get('remark').errors">J价格不能为空</nz-form-explain>
+      </nz-form-control>
+  </nz-form-item>
+</div>

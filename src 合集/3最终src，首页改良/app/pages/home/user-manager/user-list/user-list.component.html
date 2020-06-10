@@ -1,0 +1,26 @@
+<div class="list" style="background-color:#fff;">
+    <div class="add-button"><button nz-button [nzType]="'primary'" (click)="add()">添加用户</button></div>
+    <nz-table #basicTable [nzData]="tableData" [nzShowPagination]="true" style="margin-top:10px;margin-bottom:75px">
+        <thead>
+            <tr>
+                <th>用户ID</th>
+                <th>用户名</th>
+                <th>电话号码</th>
+                <th>用户角色</th>
+                <th>操作</th>
+            </tr>
+        </thead>
+        <tbody>
+            <ng-container *ngFor="let data of basicTable.data;let i = index">
+                <tr>
+                    <td>{{data?.id}}</td>
+                    <td [innerHTML]="data?.name"></td>
+                    <td>{{data?.phone}}</td>
+                    <td>{{data?.role ? '管理员' :'会员'}}</td>
+                    <td><a (click)="edit(data)">修改</a>&nbsp;&nbsp;<a (click)="delete(data.id)">删除</a></td>
+                </tr>
+            </ng-container>
+        </tbody>
+    </nz-table>
+
+</div>

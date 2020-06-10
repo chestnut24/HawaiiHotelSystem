@@ -1,0 +1,46 @@
+.header{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  .menu{
+    width: 100%;
+    display: flex;
+    align-content: space-around;
+    overflow-x: auto;
+    li{
+      width: 200px;
+      text-align: center;
+      font-size: 16px;
+    }
+    img {
+      height: 40px;
+      width: 40px;
+    }
+    flex-grow: 1;
+  }
+  .title-icon {
+    margin: 0;
+  }
+  .user-info{
+    width: 200px;
+    background-color: rgb(228, 228, 228);
+  }
+}
+.login-button{
+  cursor: pointer;
+}
+.user-info{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white!important;
+}
+.is-login{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+}
+.setting{
+  margin-left: 10px;
+}

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f54e9cec-575c-4aff-880c-3bf1eddf0c99" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/JDSystemManager/src/app/common/animations.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JDSystemManager/src/app/common/api.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JDSystemManager/src/app/common/interceptor/angular.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JDSystemManager/src/app/common/interceptor/auth.interceptor.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JDSystemManager/src/app/common/interceptor/error-handler.interceptor.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JDSystemManager/src/app/common/interface/Catelog.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JDSystemManager/src/app/common/interface/MySubscribe.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JDSystemManager/src/app/common/interface/User.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JDSystemManager/src/app/common/interface/room.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JDSystemManager/src/app/common/pipes.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JDSystemManager/src/app/common/types.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JDSystemManager/src/app/common/utils.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JDSystemManager/src/app/pages/home/home/change-password/change-password.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JDSystemManager/src/app/pages/home/home/change-password/change-password.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JDSystemManager/src/app/pages/home/home/change-password/change-password.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JDSystemManager/src/app/pages/home/home/change-password/change-password.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JDSystemManager/src/app/pages/home/home/my-subscribe/my-subscribe.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JDSystemManager/src/app/pages/home/home/my-subscribe/my-subscribe.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JDSystemManager/src/app/pages/home/home/my-subscribe/my-subscribe.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JDSystemManager/src/app/pages/home/home/my-subscribe/my-subscribe.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JDSystemManager/src/app/pages/home/room-list/pay-modal/pay-modal.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JDSystemManager/src/app/pages/home/room-list/pay-modal/pay-modal.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JDSystemManager/src/app/pages/home/room-list/pay-modal/pay-modal.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JDSystemManager/src/app/pages/home/room-list/pay-modal/pay-modal.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JDSystemManager/src/assets/image/1557550961554.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JDSystemManager/src/assets/image/1557551073318.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JDSystemManager/src/assets/image/1557625674704.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JDSystemManager/src/assets/image/1557630326699.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JDSystemManager/src/assets/image/1557835777923.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JDSystemManager/src/assets/image/1557835991740.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JDSystemManager/src/assets/image/1557836341477.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JDSystemManager/src/assets/image/1557837608023.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JDSystemManager/src/assets/image/1557837746736.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JDSystemManager/src/assets/image/1557837760676.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JDSystemManager/src/assets/image/1557838766806.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JDSystemManager/src/assets/image/1557838985742.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JDSystemManager/src/assets/image/1591365312548.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JDSystemManager/src/assets/image/hawaii/hawaii-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JDSystemManager/src/assets/image/hawaii/hawaii1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JDSystemManager/src/assets/image/hawaii/hawaii2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JDSystemManager/src/assets/image/hawaii/hawaii3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JDSystemManager/src/assets/image/hawaii/hawaii4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JDSystemManager/src/assets/image/weixin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JDSystemManager/src/assets/image/zhifubao.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JDSystemManager/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/JDSystemManager/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JDSystemManager/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/JDSystemManager/angular.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JDSystemManager/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/JDSystemManager/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JDSystemManager/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/JDSystemManager/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JDSystemManager/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/JDSystemManager/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JDSystemManager/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/JDSystemManager/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JDSystemManager/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/JDSystemManager/src/app/app.module.ts" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/JDSystemManager" />
+  </component>
+  <component name="ProjectId" id="1coLrzbpJ4DUUEhQedB4Inf6xCa" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/JDSystemManager/src/assets/image" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="ts.external.directory.path" value="D:\code\System\hotel\JDSystemManager-origin\JDSystemManager\node_modules\typescript\lib" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\code\System\hotel\JDSystemManager-origin\JDSystemManager\src\assets\image" />
+      <recent name="D:\code\System\hotel\JDSystemManager-origin\JDSystemManager\src\app" />
+      <recent name="D:\code\System\hotel\JDSystemManager-origin\JDSystemManager\src\app\pages\home\room-list" />
+      <recent name="D:\code\System\hotel\JDSystemManager-origin\JDSystemManager\src\app\pages\home\home" />
+      <recent name="D:\code\System\hotel\JDSystemManager-origin\JDSystemManager\src\assets\image\hawii" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\code\System\hotel\JDSystemManager-origin\JDSystemManager\src\assets\image\hawii" />
+      <recent name="D:\code\System\hotel\JDSystemManager-origin\JDSystemManager\src\assets\image" />
+      <recent name="D:\code\System\hotel\JDSystemManager-origin\JDSystemManager\src\assets\image\single-room" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f54e9cec-575c-4aff-880c-3bf1eddf0c99" name="Default Changelist" comment="" />
+      <created>1591190201404</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1591190201404</updated>
+      <workItem from="1591190202674" duration="626000" />
+      <workItem from="1591273009623" duration="5270000" />
+      <workItem from="1591321273547" duration="18657000" />
+      <workItem from="1591351665707" duration="952000" />
+      <workItem from="1591358729455" duration="966000" />
+      <workItem from="1591359936743" duration="230000" />
+      <workItem from="1591360321247" duration="5224000" />
+      <workItem from="1591404765755" duration="2470000" />
+      <workItem from="1591435545927" duration="446000" />
+      <workItem from="1591436066896" duration="123000" />
+      <workItem from="1591441964619" duration="5217000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

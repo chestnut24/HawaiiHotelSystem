@@ -1,0 +1,27 @@
+:host{
+  display: flex;
+  justify-content: center;
+  background-attachment: #fff;
+  min-height: 750px;
+  overflow-y: auto;
+
+  .container{
+    display: flex;
+    justify-content: center;
+    background-attachment: #fff;
+    max-height: 750px;overflow-y: auto; width: 100%;
+    .list{
+      width: 1200px;
+      .add-button{
+        display: flex;
+        align-items: center;
+        height: 40px;
+        padding: 3px 20px;
+      }
+  }
+
+
+
+  }
+
+}

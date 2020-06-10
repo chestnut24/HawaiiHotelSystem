@@ -1,0 +1,113 @@
+:host {
+  display: block;
+  width: 480px;
+  margin: 0 auto;
+}
+
+@keyframes hint-in {
+  from {
+      opacity: 0;
+  }
+
+  to {
+      opacity: 1;
+  }
+}
+
+.form-item {
+  width: 480px;
+  height: 87px;
+  padding: 16px 34px;
+  margin: 16px 0;
+  // box-shadow: 0 3px 6px rgba($color: #000000, $alpha: 0.16);
+  border-radius: 3px;
+  transition: all .3s;
+  display: flex;
+  flex-direction: row;
+
+  .text {
+      flex-grow: 1;
+  }
+
+  .icon {
+      font-size: 24px;
+      color: #999999;
+      display: flex;
+      flex-direction: column;
+      justify-content:flex-end;
+  }
+
+  .info {
+      font-size: 14px;
+      display: flex;
+      flex-direction: row;
+  }
+
+  .explain {
+      margin-left: 8px;
+      color: #f5222d;
+      animation-name: hint-in;
+      animation-duration: .3s;
+  }
+
+  .name {
+      color: #2590F7;
+  }
+
+  input {
+      width: 100%;
+      border: none;
+      font-size: 16px;
+      margin-top: 6px;
+  }
+
+  input:focus {
+      outline: none;
+  }
+
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active  {
+      -webkit-box-shadow: 0 0 0 30px white inset !important;
+  }
+
+  &:focus-within {
+      box-shadow: 1px 0 0 0 #2590F7, 0 1px 0 0 #2590F7, 1px 1px 0 0 #2590F7, 1px 0 0 0 #2590F7 inset, 0 1px 0 0 #2590F7 inset;
+  }
+
+}
+.error {
+  box-shadow: 1px 0 0 0 #f5222d, 0 1px 0 0 #f5222d, 1px 1px 0 0 #f5222d, 1px 0 0 0 #f5222d inset, 0 1px 0 0 #f5222d inset !important;
+}
+
+.login-button{
+  width:370px;
+  height:54px;
+  border:none;
+  border-radius: 3px;
+  background:#2590F7;
+  color:white;
+  font-size:20px;
+}
+
+.forget-password{
+  text-decoration:underline;
+  color:#999999;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  font-size: 16px;
+  .forget-password-content{
+      width: 100px;
+      cursor: pointer;
+      text-align: right;
+  }
+}
+.register{
+  display: flex;
+  justify-content: flex-end;
+  .content{
+    margin-right: 38px;
+  }
+}

@@ -1,0 +1,9 @@
+<div [formGroup]="form">
+    <nz-form-item>
+        <nz-form-label [nzSm]="6" [nzXs]="24" nzRequired nzFor="name">类型名称</nz-form-label>
+        <nz-form-control [nzSm]="15">
+            <input nz-input formControlName="name" id="name" placeholder="输入房间类型名称">
+            <nz-form-explain *ngIf="form.get('name').dirty && form.get('name').errors">类型名称不能为空</nz-form-explain>
+        </nz-form-control>
+    </nz-form-item>
+</div>

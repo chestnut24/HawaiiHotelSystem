@@ -1,0 +1,34 @@
+<div [formGroup]="form">
+    <nz-form-item>
+        <nz-form-label [nzSm]="6" [nzXs]="24" nzRequired nzFor="name">用户名</nz-form-label>
+        <nz-form-control [nzSm]="15">
+            <input nz-input formControlName="name" id="name" placeholder="输入用户名">
+            <nz-form-explain *ngIf="form.get('name').dirty && form.get('name').errors">不能为空</nz-form-explain>
+        </nz-form-control>
+    </nz-form-item>
+    <nz-form-item>
+        <nz-form-label [nzSm]="6" [nzXs]="24" nzRequired nzFor="password">密码</nz-form-label>
+        <nz-form-control [nzSm]="15">
+            <input nz-input formControlName="password" id="password" placeholder="输入用户名" type="password">
+            <nz-form-explain *ngIf="form.get('password').dirty && form.get('password').errors">不能为空</nz-form-explain>
+        </nz-form-control>
+    </nz-form-item>
+    <nz-form-item>
+        <nz-form-label [nzSm]="6" [nzXs]="24" nzRequired nzFor="phone">电话</nz-form-label>
+        <nz-form-control [nzSm]="15">
+            <input nz-input formControlName="phone" id="phone" placeholder="输入电话号码">
+            <nz-form-explain *ngIf="form.get('phone').dirty && form.get('phone').errors">不能为空</nz-form-explain>
+        </nz-form-control>
+    </nz-form-item>
+    <nz-form-item>
+        <nz-form-label [nzSm]="6" [nzXs]="24" nzRequired nzFor="role">角色</nz-form-label>
+        <nz-form-control [nzSm]="15">
+            <nz-select style="width:200px"
+            nzShowSearch
+            nzPlaceHolder="选择权限" formControlName="role">
+            <nz-option nzLabel="管理员" [nzValue]="'1'"></nz-option>
+            <nz-option nzLabel="普通用户" [nzValue]="'0'"></nz-option>
+          </nz-select>
+        </nz-form-control>
+    </nz-form-item>
+</div>

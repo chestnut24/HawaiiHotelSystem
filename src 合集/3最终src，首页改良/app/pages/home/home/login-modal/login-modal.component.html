@@ -1,0 +1,25 @@
+<form nz-form [formGroup]="form" class="login-form">
+    <nz-form-item>
+      <nz-form-label [nzSpan]="5" nzFor="checkPassword" nzRequired>用户名</nz-form-label>
+      <nz-form-control [nzSpan]="17">
+        <nz-input-group [nzPrefix]="prefixUser">
+          <input type="text" nz-input formControlName="name" placeholder="用户名" />
+        </nz-input-group>
+        <nz-form-explain *ngIf="form.get('name')?.dirty && form.get('name')?.errors"
+          >请输入用户名</nz-form-explain>
+      </nz-form-control>
+    </nz-form-item>
+    <nz-form-item>
+      <nz-form-label [nzSpan]="5" nzFor="checkPassword" nzRequired>密码</nz-form-label>
+      <nz-form-control [nzSpan]="17">
+        <nz-input-group [nzPrefix]="prefixLock">
+          <input type="password" nz-input formControlName="password" placeholder="密码" />
+        </nz-input-group>
+        <nz-form-explain *ngIf="form.get('password')?.dirty && form.get('password')?.errors"
+          >请输入密码</nz-form-explain>
+      </nz-form-control>
+    </nz-form-item>
+    <div class="register"><a class="content" (click)="register()">注册</a></div>
+  </form>
+  <ng-template #prefixUser><i nz-icon type="user"></i></ng-template>
+  <ng-template #prefixLock><i nz-icon type="lock"></i></ng-template>

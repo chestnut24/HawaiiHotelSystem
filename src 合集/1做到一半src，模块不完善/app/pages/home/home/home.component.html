@@ -1,0 +1,34 @@
+<div class="header">
+  <ul nz-menu [nzMode]="'horizontal'"class="menu" *ngIf="!isManager">
+    <li nz-menu-item [routerLink]="'/'" routerLinkActive="router-link-active">主页</li>
+    <li nz-menu-item *ngFor="let item of catelogs" [routerLink]="'catelog/' + item?.id" routerLinkActive="router-link-active" >{{item?.name}}</li>
+  </ul>
+  <ul nz-menu [nzMode]="'horizontal'"class="menu" *ngIf="isManager">
+      <li nz-menu-item  [routerLink]="'user-list'" routerLinkActive="router-link-active">用户管理</li>
+      <li nz-menu-item  [routerLink]="'catelog-list'" routerLinkActive="router-link-active">房间类型管理</li>
+      <li nz-menu-item [routerLink]="'room-list'" routerLinkActive="router-link-active">房间管理</li>
+      <li nz-menu-item [routerLink]="'subscribe-list'" routerLinkActive="router-link-active">订单管理</li>
+    </ul>
+  <div class="user-info">
+      <div (click)="login()" class="login-button" *ngIf="!isLogin">
+        [点击登录]
+      </div>
+      <div *ngIf="isLogin" class="is-login">
+        <div class="user">
+          <div class="user-name">{{currentUser?.name}}</div>
+        </div>
+        <div class="setting">
+          <nz-dropdown [nzPlacement]="'bottomRight'" [nzTrigger]="'click'">
+              <i nz-dropdown nz-icon [nzType]="'bars'" style="cursor:pointer"></i>
+              <ul nz-menu>
+                  <li nz-menu-item >更新用户信息</li>
+                  <li nz-menu-item *ngIf="currentUser?.id === 1 && !isManager" (click)="entryManager()">进入后台管理系统</li>
+                  <li nz-menu-item *ngIf="currentUser?.id === 1 && isManager" (click)="leaveManager()">离开后台管理系统</li>
+                  <li nz-menu-item (click)="loginOut()">退出登录</li>
+              </ul>
+          </nz-dropdown>
+        </div>
+      </div>
+  </div>
+</div>
+<router-outlet style="background-color:#fff;"></router-outlet>

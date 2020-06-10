@@ -1,0 +1,33 @@
+<div [formGroup]="form">
+
+    <nz-form-item>
+        <nz-form-label [nzSm]="6" [nzXs]="24" nzRequired nzFor="userName">用户名</nz-form-label>
+        <nz-form-control [nzSm]="15">
+            <input nz-input formControlName="userName" id="userName"  readonly>
+        </nz-form-control>
+    </nz-form-item>
+    <nz-form-item>
+        <nz-form-label [nzSm]="6" [nzXs]="24" nzRequired nzFor="roomNumber">房间号</nz-form-label>
+        <nz-form-control [nzSm]="15">
+            <input nz-input formControlName="roomNumber" id="roomNumber"  type="number" readonly>
+        </nz-form-control>
+    </nz-form-item>
+    <nz-form-item>
+        <nz-form-label [nzSm]="6" [nzXs]="24" nzRequired nzFor="price">价格</nz-form-label>
+        <nz-form-control [nzSm]="15">
+            <input nz-input formControlName="price" id="price"  type="number" readonly>
+        </nz-form-control>
+    </nz-form-item>
+    <nz-form-item>
+        <nz-form-label [nzSm]="6" [nzXs]="24" nzRequired nzFor="startedTime">入住时间</nz-form-label>
+        <nz-form-control [nzSm]="15">
+            <input nz-input formControlName="startedTime" id="startedTime"   readonly>
+        </nz-form-control>
+    </nz-form-item>
+    <nz-form-item>
+        <nz-form-label [nzSm]="6" [nzXs]="24" nzRequired nzFor="endedTime">离开时间</nz-form-label>
+        <nz-form-control [nzSm]="15">
+            <input nz-input formControlName="endedTime" id="endedTime"   readonly>
+        </nz-form-control>
+    </nz-form-item>
+  </div>

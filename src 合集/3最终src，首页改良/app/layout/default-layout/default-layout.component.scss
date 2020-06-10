@@ -1,0 +1,39 @@
+:host {
+  .layout-title {
+    height: 100px;
+    text-align: center;
+    //background-color: #1890FF;
+
+    background: url("../../../assets/image/hawaii/hawaii1.jpg") no-repeat;
+    color: #ffffff;
+    font-size: 36px;
+    line-height: 100px;
+    font-weight: bold;
+    cursor:pointer;
+  }
+  .title-icon{
+    position: fixed;
+    left: 0;
+    top: -6px;
+    img{
+      height: 100px;
+      width: 100px;
+      z-index: 100;
+    }
+  }
+
+  .title-nice {
+    color: transparent;
+    -webkit-text-stroke: 1px #ffffff;
+    letter-spacing: 0.04em;
+    padding-left: 50px;
+  }
+
+  .layout-footer {
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #fff;
+  }
+}

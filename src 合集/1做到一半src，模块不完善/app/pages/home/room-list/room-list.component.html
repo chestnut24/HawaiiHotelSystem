@@ -1,0 +1,38 @@
+<div style="max-height:700px;overflow-y: auto;">
+    <div [formGroup]="selectForm" class="select">
+        <div class="select-date">
+            <span class="label">
+              入住时间:
+            </span>
+            <span class="date-pick">
+                <nz-range-picker formControlName="date" ></nz-range-picker>
+            </span>
+        </div>
+        <div class="select-price">
+          <div class="label" >价格区间(元):</div>
+          <input nz-input type="number" formControlName="minPrice" style="margin-left:10px;" placeholder="最低价格">
+          <span>~</span>
+          <input  nz-input type="number" formControlName="maxPrice" placeholder="最高价格">
+          <button nz-button nzType="primary" style="margin-left:10px;" (click)="search(true)">查询</button>
+          <button nz-button  style="margin-left:10px;" (click)="clear()">清除</button>
+        </div>
+        </div>
+    <div class="room" nz-row >
+
+      <div  nz-col class="room-list" *ngFor="let item of dataList"  [nzXXl]="4" [nzLg]="6">
+        <div class="item">
+          <img [src]="item?.image_url" alt="item" height="150px" width="250px">
+          <div class="title" [innerHtml]="item?.room_number + '号房间'"></div>
+          <div class="button">
+            <span [innerHtml]="'价格:'+ item?.money+'元'"></span>
+            <span [innerHtml]="'大小:'+ item?.area+'㎡'"></span>
+            <button nz-button [nzType]="'primary'" [nzSize]="'small'" (click)="subscribe(item)">预定</button>
+          </div>
+        </div>
+      </div>
+
+      <div *ngIf="!dataList.length" class="no-content">
+          <span class="content">诶呀，客官，没有符合您要求的客房呢！！！</span>
+      </div>
+    </div>
+</div>

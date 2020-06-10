@@ -1,0 +1,76 @@
+:host {
+  background-color: #fff;
+
+  .select {
+    display: flex;
+    padding: 10px;
+    width: 100%;
+
+    .select-price {
+      display: flex;
+      align-items: center;
+      margin-left: 30px;
+
+      input {
+        width: 80px;
+      }
+    }
+  }
+
+  .date-pick {
+    margin-left: 10px;
+  }
+
+  .room {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 100px;
+
+    .room-list {
+      height: 250px;
+      padding: 5px;
+      // margin:10px 0 0 10px;
+      .item {
+        height: 100%;
+        width: 100%;
+        border-radius: 5px;
+        border: 1px solid #d3d3d3;
+        box-shadow: 1px 1px 5px #cfcece;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .title {
+          margin-top: 3px;
+          font-weight: bold;
+        }
+
+        .button {
+          width: 100%;
+          display: flex;
+          justify-content: space-around;
+          // padding-right:50px;
+        }
+      }
+    }
+  }
+}
+
+.gutter-box {
+  background: #00a0e9;
+  padding: 5px 0;
+}
+
+.no-content {
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .content {
+    font-size: 20px;
+    color: #959595;
+    font-weight: bold;
+  }
+}

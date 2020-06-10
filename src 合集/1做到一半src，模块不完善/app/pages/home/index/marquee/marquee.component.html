@@ -1,0 +1,17 @@
+<div style="height:600px; overflow: auto;"  class="div">
+  <div  class="announce">精品客房</div>
+  <div class="room" nz-row >
+
+    <div  nz-col class="room-list" *ngFor="let item of dataList"  [nzXXl]="4" [nzLg]="6">
+      <div class="item">
+        <img [src]="item?.image_url" alt="item" height="150px" width="250px">
+        <div class="title" [innerHtml]="item?.room_number + '号房间'"></div>
+        <div class="button">
+          <span [innerHtml]="'价格:'+ item?.money+'元'"></span>
+          <span [innerHtml]="'大小:'+ item?.area+'㎡'"></span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

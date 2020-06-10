@@ -1,0 +1,32 @@
+<div  class="container" >
+  <div class="list" style="background-color:#fff;">
+    <div class="add-button"><button nz-button [nzType]="'primary'" (click)="add()">添加房间</button></div>
+    <nz-table #basicTable [nzData]="tableData" [nzShowPagination]="true" style="margin-top:10px;margin-bottom: 20px;">
+        <thead>
+            <tr>
+                <th>房间号</th>
+                <th>面积大小</th>
+                <th>价格</th>
+                <th>类型</th>
+                <th>照片</th>
+                <th>备注</th>
+                <th>操作</th>
+            </tr>
+        </thead>
+        <tbody>
+            <ng-container *ngFor="let data of basicTable.data;let i = index">
+                <tr>
+                    <td [innerHTML]="data?.room_number"></td>
+                    <td>{{data?.area}}</td>
+                    <td>{{data?.money}}</td>
+                    <td>{{data?.catelogName}}</td>
+                    <td><img [src]="'../../../../../assets/image/' + data?.image_url" alt="picture" style="height:50px"></td>
+                    <td [innerHtml]="data?.remark !== 'null'? data?.remark:''"></td>
+                    <td><a (click)="edit(data)">修改</a>&nbsp;&nbsp;<a (click)="delete(data.id)">删除</a></td>
+                </tr>
+            </ng-container>
+        </tbody>
+    </nz-table>
+
+  </div>
+</div>

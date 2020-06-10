@@ -1,0 +1,122 @@
+// .announcement{
+//   height: 52px;
+//   border: 1px solid #1890FF;
+//   border-radius:5px;
+// }
+// .div{
+//   max-height:700px;
+//   overflow: auto;
+//   .title{
+//     height: 52px;
+//   }
+// }
+:host {
+  .main-page {
+    background: url("../../../../../assets/image/hawaii/hawaii1.jpg");
+  }
+
+  .announce {
+    height: 52px;
+    padding: 10px;
+    font-size: 20px;
+    margin-left: 10px;
+    line-height: 32px;
+    font-weight: bold;
+    color: #f8b90bf3;
+  }
+
+  background-color: #fff;
+
+  .select {
+    display: flex;
+    padding: 10px;
+    width: 100%;
+
+    .select-price {
+      display: flex;
+      align-items: center;
+      margin-left: 30px;
+
+      input {
+        width: 80px;
+      }
+    }
+  }
+
+  .date-pick {
+    margin-left: 10px;
+  }
+
+  .room {
+
+    background: url("../../../../../assets/image/hawaii/hawaii1.jpg") no-repeat;
+    background-size: cover;
+    margin-bottom: 75px;
+    //background: #fff;
+    padding:10px;
+
+    .room-list {
+      color: white;
+      height: 300px;
+      padding: 20px 30px;
+      //margin: 20px;
+      // margin:10px 0 0 10px;
+      img {
+        border-radius: 15px;
+        border: 5px solid #d9d9d9;
+        margin-top: 10px;
+      }
+      .item {
+        height: 100%;
+        width: 100%;
+        border-radius: 10px;
+        //border: 5px solid #89defa;
+        box-shadow: 1px 1px 5px #cfcece;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        // 半透明边框
+        border: 20px solid rgba(255,255,255,.5);
+        //background: white;
+        background-clip: padding-box;
+        /* 其它样式 */
+        max-width: 20em;
+        padding: 2em;
+        margin: 2em auto 0;
+        font: 100%/1.5 sans-serif;
+
+        .title {
+          margin-top: 3px;
+          font-weight: bold;
+          font-size: 20px;
+        }
+
+        .button {
+          width: 100%;
+          display: flex;
+          justify-content: space-around;
+          // padding-right:50px;
+        }
+      }
+    }
+  }
+}
+
+.gutter-box {
+  background: #00a0e9;
+  padding: 5px 0;
+}
+
+.no-content {
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .content {
+    font-size: 20px;
+    color: #959595;
+    font-weight: bold;
+  }
+}

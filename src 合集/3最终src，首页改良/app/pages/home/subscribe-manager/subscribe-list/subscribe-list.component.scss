@@ -1,0 +1,25 @@
+:host{
+  display: flex;
+  justify-content: center;
+  background-attachment: #fff;
+  overflow-y: auto;
+
+  .container{
+    display: flex;
+    justify-content: center;
+    background-attachment: #fff;
+    .list{
+      width: 1200px;
+      .add-button{
+        display: flex;
+        align-items: center;
+        height: 40px;
+        padding: 3px 20px;
+      }
+  }
+
+
+
+  }
+
+}
