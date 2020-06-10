@@ -1,0 +1,2 @@
+# HawaiiHotelSystem
+具有用户和管理员两大模块的酒店管理系统，实现了增删改查等功能，前端angular，后端SpringBoot，数据库MySQL
